@@ -88,6 +88,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/helium/proprietary/vendor/etc/pp_calib_data_auo_r61322_1080p_video_mode_dsi_panel.xml:system/vendor/etc/pp_calib_data_auo_r61322_1080p_video_mode_dsi_panel.xml \
     vendor/xiaomi/helium/proprietary/vendor/etc/pp_calib_data_tianma_r63350_1080p_video_mode_dsi_panel.xml:system/vendor/etc/pp_calib_data_tianma_r63350_1080p_video_mode_dsi_panel.xml \
     vendor/xiaomi/helium/proprietary/vendor/etc/sdm_ys_32p_120_21_5_perturb50.bin:system/vendor/etc/sdm_ys_32p_120_21_5_perturb50.bin \
+    vendor/xiaomi/helium/proprietary/vendor/etc/thermal-engine-8956.conf:system/vendor/etc/thermal-engine-8956.conf \
+    vendor/xiaomi/helium/proprietary/vendor/etc/thermal-engine-8976.conf:system/vendor/etc/thermal-engine-8976.conf \
     vendor/xiaomi/helium/proprietary/vendor/etc/watermark_font_2300_3199.dat:system/vendor/etc/watermark_font_2300_3199.dat \
     vendor/xiaomi/helium/proprietary/vendor/framework/embmslibrary.jar:system/vendor/framework/embmslibrary.jar \
     vendor/xiaomi/helium/proprietary/vendor/lib/hw/fingerprint.fpc.so:system/vendor/lib/hw/fingerprint.fpc.so \
@@ -97,6 +99,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/helium/proprietary/vendor/lib64/hw/fingerprint.fpc.so:system/vendor/lib64/hw/fingerprint.fpc.so \
     vendor/xiaomi/helium/proprietary/vendor/lib64/lib_fpc_tac_shared.so:system/vendor/lib64/lib_fpc_tac_shared.so \
     vendor/xiaomi/helium/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
+    vendor/xiaomi/helium/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/xiaomi/helium/proprietary/vendor/lib/libFaceGrade.so:system/vendor/lib/libFaceGrade.so \
     vendor/xiaomi/helium/proprietary/vendor/lib/libFaceProc.so:system/vendor/lib/libFaceProc.so \
     vendor/xiaomi/helium/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
@@ -395,10 +398,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/helium/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
     vendor/xiaomi/helium/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
     vendor/xiaomi/helium/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
+    vendor/xiaomi/helium/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
     vendor/xiaomi/helium/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
 PRODUCT_PACKAGES += \
     libqminvapi \
+    libthermalclient \
     libtime_genoff \
     libts_detected_face_hal \
     libts_face_beautify_hal \
